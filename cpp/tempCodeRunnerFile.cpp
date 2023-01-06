@@ -1,18 +1,18 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
-int main()
-{
-    ios_base::sync_with_stdio(false);
-    int tc;
-    cin >> tc;
-    while (tc--)
-    {
-        int b;
-        cin >> b;
-        if (b <=3)
-            cout << 0 << endl;
-        else
-            cout << (b/2)*(b/2)-(b/2)-((b/2)*(b/2)-(b/2))/2 << endl;
-    }
-    return 0;
+int MAX;
+
+int max(int arr[], int idx, int n){
+    // write your code here
+    
+}
+
+int main(){
+    int n;
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n; i++)
+        cin >> arr[i];
+    int p = max(arr, 0, n);
+    cout << p << endl;
 }
