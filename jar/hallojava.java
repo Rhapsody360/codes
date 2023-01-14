@@ -13,3 +13,4 @@ class child{
     }
 }
 
+str = sc.nextLine()
