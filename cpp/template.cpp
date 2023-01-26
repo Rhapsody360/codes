@@ -3,7 +3,7 @@ using namespace std;
 int main() {
     ios_base::sync_with_stdio(false);
     int tc;
-    cin >> tc;
+    scanf("%d",&tc);
     while (tc--) {
         
     }
