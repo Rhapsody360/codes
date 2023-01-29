@@ -1,20 +1,23 @@
 #include<iostream>
 using namespace std;
 
-int powerLogarithmic(int x,int n){
-    // write your code here
+void toh(int n, int t1id, int t2id, int t3id){
     if (n==0){
-        return 1;
+        return;
     }
-    int xnb2=powerLogarithmic(x,n/2);
-    int xn = xnb2*xnb2;
-    if (n%2==1){
-        xn =xn*x;
-    }
-    return xn;
+    //nothing done inside 'pre' area here
+    toh(n-1,t1id,t3id,t2id);//left call
+    cout << n<<"["<<t1id<<" -> "<<t2id<<"]"<<endl;//'in' area has code
+    toh(n-1,t3id,t2id,t1id);// right call
+    //'post' area has no code either
 }
 
-int main(){
-    int x,n; cin>>x>>n;
-    cout<<powerLogarithmic(x,n);
+
+
+
+int  main() {
+
+    int n;cin>>n;//number of disks
+    int n1,n2,n3;cin>>n1>>n2>>n3;//towers
+    toh(n, n1, n2, n3);
 }

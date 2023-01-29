@@ -1,0 +1,1 @@
+{"name":"Local: thirdcodechefcntst","url":"d:\\codes\\cpp\\thirdcodechefcntst.cpp","tests":[{"id":1674825319403,"input":"4\n1\n1\n4\n1001\n5\n11001\n7\n1101101","output":"NO\nYES\nYES\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\codes\\cpp\\thirdcodechefcntst.cpp","group":"local","local":true}

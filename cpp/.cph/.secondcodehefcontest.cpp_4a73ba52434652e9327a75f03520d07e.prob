@@ -1,0 +1,1 @@
+{"name":"Local: secondcodehefcontest","url":"d:\\codes\\cpp\\secondcodehefcontest.cpp","tests":[{"id":1674242269575,"input":"3\n12 15\n5 50\n9 11","output":"9\n0\n8"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\codes\\cpp\\secondcodehefcontest.cpp","group":"local","local":true}

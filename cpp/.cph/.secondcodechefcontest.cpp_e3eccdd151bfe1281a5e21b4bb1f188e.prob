@@ -1,0 +1,1 @@
+{"name":"Local: secondcodechefcontest","url":"d:\\codes\\cpp\\secondcodechefcontest.cpp","tests":[{"id":1674059970514,"input":"3\n5\n8 4 2 5 2\n6\n7 9 -10 8 12 17\n4\n-3 -1 -10 10","output":"1\n6\n-1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\codes\\cpp\\secondcodechefcontest.cpp","group":"local","local":true}
