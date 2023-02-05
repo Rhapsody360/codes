@@ -3,7 +3,14 @@
         "iostream": "cpp",
         "iosfwd": "cpp",
         "ostream": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "regex": "cpp",
+        "*.tcc": "cpp",
+        "bitset": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "vector": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled",
     "workbench.editor.highlightModifiedTabs": false
