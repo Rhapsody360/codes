@@ -1,12 +1,12 @@
-    // int tc;
-    // cin >> tc;
-    // while (tc--){
-    //     int a,b,minx;
-    //     cin >> a >>b;
-    //     int x=a*b;
-    //     while ((lcm(a,x-1)-gcd(b,x-1))<(lcm(a,x)-gcd(b,x))){
-    //         minx=(lcm(a,x)-gcd(b,x));
-    //         x--;
-    //     }
-    //     cout << minx << endl;
-    // }
+#include <bits/stdc++.h>
+#include <string>
+//using namespace std;
+int main (){
+    printf("good printing\n");
+    int i;
+    float f;
+    std :: string y;
+    print
+    
+    return 0;
+}
