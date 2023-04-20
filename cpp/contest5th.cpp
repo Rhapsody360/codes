@@ -1,77 +1,102 @@
 #include <bits/stdc++.h>
 using namespace std;
-int in(char c,vector <char> &arr){
-    for (int i=0;i<arr.size();i++){
-        if (arr[i]==c){
-            return i;
+
+int main()
+{
+
+    int t;
+    cin >> t;
+
+    while (t--)
+    {
+        int n, m;
+        cin >> n >> m;
+
+        string s1, s2;
+
+        // s1 always of greater length than s2 and n > m always
+        if (n > m)
+        {
+            cin >> s1 >> s2;
         }
-    }
-    return -1;
-}
-int ins(char c,string &a){
-    for (int i=0;i<a.size();i++){
-        if (a[i]==c){
-            return i;
+        else
+        {
+            cin >> s2 >> s1;
+            swap(n, m);
         }
-    }
-    return -1;
-}
-int substring(string &b,string &a){
-    for (int i = 0; i<b.size();i++){
-        if(in(b[i],a) != -1){
-            continue;
-        }
-        else {
-            return 0;
-        }
-    }
-    return 1;
-}
-int main() {
-    //ios_base::sync_with_stdio(false);
-    int tc;
-    scanf("%d",&tc);
-    while (tc--) {
-        string a,b,temp="";
-        int n,m;
-        cin >> n >>m;
-        cin >> a;
-        cin >> b;
-        
-        sort(a.begin(),a.end());
-        sort(b.begin(),b.begin());
-        
-        if (n>m){
-            if(substring(b,a)){
-                for (char i:a){
-                    if(ins(i,b))
-                }
+
+        unordered_map<char, int> um1; // stirng s1 -- n
+        unordered_map<char, int> um2; // stirng s2 -- m
+
+        for (int i = 0; i < n; i++)
+        {
+            if (i < m) {
+                char ch1 = s2[i];
+                um2[ch1]++;
             }
+            char ch2 = s1[i];
+            um1[ch2]++;
         }
-        
-        for (char i:b){
-            temp=i+temp;
-        }
-        b=temp;
-        string s=a+b;
-        cout << s << endl;
-        //cout << s <<endl;
-        vector <char> odds;
-        for (char i:s){
-            int loc=in(i,odds);
-            if (loc ==-1){
-                odds.push_back(i);
+
+        bool flag = false;
+
+        // iterating over the smaller string 
+        /* all chars in s2 must be present in s1 otherwise print "NO"*/
+        for (auto it : um2)
+        {   
+            char ch = it.first; //key
+            int f2  = it.second;//value
+
+            // checking frequency of that char in s1 -- if f2 =< f1 -- fine ... if f2 > f1 print NO
+            int f1 = um1[ch];
+
+            // ch not present in the string -- print no and go to other test case
+            if (um1.find(ch) == um1.end()) {
+                cout << "NO" << endl;
+                flag = true;
+                break;
+            }
+
+            if (f2 > f1) {
+                cout << "NO" << endl;
+                flag = true;
+                break;
             }
             else {
-                odds.pop_back();
+                um1[ch] = f1 - f2;
             }
         }
-        if (odds.size()==1 || odds.size()==0){
-            cout << "YES:"<< odds.size() << endl;
+
+        if (flag == true) {
+            continue;
         }
-        else {
-            cout << "NO"<< endl;
+
+        // now checking the rest of the chars of stirng s1
+        // not more than 1 char's frequecy should be more than 1
+
+        int oddCount = 0;
+        for (auto it : um1)
+        {
+            char ch = it.first;
+            int f = it.second;
+
+            if (f % 2 != 0) {
+                oddCount++;
+            }
+            if (oddCount == 2) {
+                cout << "NO" << endl;
+                flag = true;
+                break;
+            }
         }
+
+        if (flag == true) {
+            continue;
+        }
+
+        // if rest all char's of s1 are also pallindrome then print
+        cout << "YES" << endl;
     }
+
     return 0;
 }

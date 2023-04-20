@@ -1,0 +1,1 @@
+{"name":"Local: cppractise","url":"d:\\codes\\cpp\\cppractise.cpp","tests":[{"id":1676832193348,"input":"2\n3\n1 \n2\n1\n5\n1\n1\n2\n2\n3","output":"2\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\codes\\cpp\\cppractise.cpp","group":"local","local":true}

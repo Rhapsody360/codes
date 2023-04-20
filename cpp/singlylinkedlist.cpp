@@ -2,7 +2,7 @@
 class node{
     public: 
         int data;
-        node* next;
+        node* next=NULL;
 };
 using namespace std;
 

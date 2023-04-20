@@ -13,5 +13,6 @@
         "vector": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled",
-    "workbench.editor.highlightModifiedTabs": false
+    "workbench.editor.highlightModifiedTabs": false,
+    "cmake.configureOnOpen": true
 }
