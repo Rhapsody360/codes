@@ -11,6 +11,7 @@ class child{
     public static void print(){
         System.out.println("extended class executing");
     }
-}
+    public child(){
 
-str = sc.nextLine()
+    }
+}

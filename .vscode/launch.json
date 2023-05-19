@@ -5,6 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "boxes",
+      "request": "launch",
+      "mainClass": "boxes",
+      "projectName": "codes_e9d42d4d"
+    },
+    {
       "name": "g++.exe build and debug active file",
       "type": "cppdbg",
       "request": "launch",
@@ -13,7 +20,7 @@
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
-      "externalConsole": true, //set to true to see output in cmd instead
+      "externalConsole": true,
       "MIMode": "gdb",
       "miDebuggerPath": "D:\\compilers\\cpp\\bin\\g++.exe",
       "setupCommands": [
@@ -34,7 +41,7 @@
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
-      "externalConsole": true, //set to true to see output in cmd instead
+      "externalConsole": true,
       "MIMode": "gdb",
       "miDebuggerPath": "D:\\compilers\\cpp\\bin\\g++.exe",
       "setupCommands": [
