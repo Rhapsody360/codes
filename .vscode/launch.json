@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Solution",
+      "request": "launch",
+      "mainClass": "Solution",
+      "projectName": "codes_e9d42d4d"
+    },
+    {
+      "type": "java",
+      "name": "arraylist",
+      "request": "launch",
+      "mainClass": "arraylist",
+      "projectName": "codes_e9d42d4d"
+    },
+    {
+      "type": "java",
       "name": "boxes",
       "request": "launch",
       "mainClass": "boxes",

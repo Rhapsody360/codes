@@ -28,8 +28,8 @@ int main() {
 
 void stockBuySell(int price[], int N){
     //Code here
-        int flag = 0;
-    int buy=0,sell,maxdiff=price[0]-price[1];
+        bool flag = 0;
+    int buy=0,sell=0;
     for (int i = 0 ; i < N-1; i++){ //goes upto second last number to avoid comparing garbagevalue
         if (price[i]<price[i+1]){
             sell=i+1;
@@ -46,6 +46,9 @@ void stockBuySell(int price[], int N){
             }
         }
     }
+	if (buy!=N-1){
+		cout <<"(" << buy << " " <<N-1<<")"<<"\n";
+	}
     if (flag==0)
         cout << "No Profit";
     return;

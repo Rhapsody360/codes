@@ -13,18 +13,16 @@ int main()
     }
 
     // main code starts here
-    int max;
-    for (i=0;i<n-1;i++){/*from 0 to second last
-element cuz at the end the last element is sorted*/ 
-        max=n-i;
-        for (int j=0;j<n-i;j++){
-            if (arr[j]>arr[max]){
-                // int t=arr[max];
-                // arr[max]=arr[j];
-                // arr[j]=t;
-                swap(arr[j],arr[max]);
-            }
+    for (int i=0;i<n-1;i++){/*from 0 to second last element cuz at the 
+    end the last element is sorted*/
+        bool swapped = false;
+        for (int j=i+1;j<n;j++){
+            if (arr[i]>arr[j]){
+                swap(arr[i],arr[j]);
+                swapped = true;
+            }            
         }
+        if (!swapped) continue;
     }
 
     //output loop

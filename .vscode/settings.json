@@ -11,7 +11,8 @@
         "list": "cpp",
         "string": "cpp",
         "vector": "cpp",
-        "forward_list": "cpp"
+        "forward_list": "cpp",
+        "type_traits": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled",
     "workbench.editor.highlightModifiedTabs": false,
