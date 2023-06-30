@@ -1,33 +1,46 @@
 #include <bits/stdc++.h>
 using namespace std;
-int main()
-{
-    ios_base::sync_with_stdio(false);
-    int n;
-    cin >> n;
-    int nums[n];
-    for(int i=0;i<n;i++) {
-        cin >> nums[i];
-    }
-    int k;
-    cin >> k;
 
-    // end of input
+// } Driver Code Ends
+class Solution{
+	public:
+	void leftRotate(int arr[], int k, int n) 
+	{ 
+	    // Your code goes here
+        k=k%n;
+        int temp[k] ;
+        for(int i = 0; i<k;i++){
+            temp [i]= arr[i];
+        }
+        for (int i = 0;i<n-k;i++){
+            arr[i]=arr[i+k];
+        }
+        for (int i = n-k;i<n;i++){
+            arr[i] = temp[i-(n-k)];
+        }
+	}
+};
 
-    // main logic begin
-    // int n= sizeof(nums)/sizeof(int);
-    int op[n];
-    for (int i=k+1;i<n;i++){
-        op[i-k-1]=nums[i];
-    }
-    for (int i = 0 ;i<=k;i++){
-        op[i+k]=nums[i];
-    }
+//{ Driver Code Starts.
 
-    //output loop
-    for (int i =0;i<n;i++){
-        nums[i]=op[i];
-        cout << op[i] << " ";
+int main() {
+   	int t;
+    cin >> t;
+    while (t--){
+    	int n;
+	    cin >> n;
+	    int k;
+	    cin >> k;
+	    int a[n];
+	    for(int i = 0;i<n;i++){
+	        cin >> a[i];
+	        // um[a[i]]++;
+        }
+        Solution ob;
+        ob.leftRotate(a,k,n);        
+        for (int i = 0; i < n; i++) 
+        	cout << a[i] << " "; 
+	    cout << "\n";	     
     }
-    //main logic end
+    return 0;
 }
