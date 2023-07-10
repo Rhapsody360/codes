@@ -18,9 +18,10 @@ int main()
 	// cout << "enter the key value to be searched";
 	cin >> key;
 	int start=0;
-	int end=vec.size();
+	/*to prevent segmentation fault we use size -1 */
+	int end=vec.size()-1;
 	int mid;
-	while(start<end){
+	while(start<=end){ // to make all test cases pass and not stuck in an endless loop
 		mid = (start+end)/2;
 		if (vec[mid]==key){
 			cout << "the key is found at "<<mid; 
