@@ -12,7 +12,16 @@
         "string": "cpp",
         "vector": "cpp",
         "forward_list": "cpp",
-        "type_traits": "cpp"
+        "type_traits": "cpp",
+        "cstring": "cpp",
+        "exception": "cpp",
+        "fstream": "cpp",
+        "istream": "cpp",
+        "sstream": "cpp",
+        "stdexcept": "cpp",
+        "typeinfo": "cpp",
+        "iomanip": "cpp",
+        "system_error": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled",
     "workbench.editor.highlightModifiedTabs": false,
