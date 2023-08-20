@@ -21,9 +21,11 @@
         "stdexcept": "cpp",
         "typeinfo": "cpp",
         "iomanip": "cpp",
-        "system_error": "cpp"
+        "system_error": "cpp",
+        "random": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled",
     "workbench.editor.highlightModifiedTabs": false,
-    "cmake.configureOnOpen": true
+    "cmake.configureOnOpen": true,
+    "cSpell.enabled": false
 }
