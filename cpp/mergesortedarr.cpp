@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include <vector>
+#include <conio.h>
 using namespace std;
 
 
@@ -40,9 +40,7 @@ class Solution{
             }
             if (gap==1)break;
             gap = gap/2 + gap%2;
-            
         }
-
     } 
 };
 
@@ -79,7 +77,7 @@ int main()
 	    
 	    cout<<endl;
 	}
-
+    _getch();
 	return 0; 
 } 
 
